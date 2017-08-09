@@ -12,6 +12,26 @@ body {
   font: $base-text-size / 1 $base-font-family;
 }
 
+nav {
+  width: 100%;
+  background-color: aquamarine;
+  padding: 10px 0px 50px 0px;
+  flex-direction: row;
+  display: flex;
+}
+
+ul {
+  float: right;
+  position: relative;
+  left: 48em;
+  width: 18%;
+  list-style-type: none;
+}
+
+li {
+  
+}
+
 #palindromes,#factorialize,#reverse,#longest-word,#title-case,#return-largest-num-array {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -43,3 +63,15 @@ p {
   position: relative;
   left: 30vw;
 }
+
+#JS {
+  -ms-transform: rotate(7deg);
+  -webkit-transform: rotate(7deg);
+  transform: rotate(-7deg);
+  font-family: fantasy;
+  text-decoration: underline;
+  text-shadow: 2px 2px rgba(255, 0, 0, 0.31);
+  position: relative;
+  top: 28px;
+  left: 14px;
+  }

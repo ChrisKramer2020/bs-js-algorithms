@@ -6,6 +6,34 @@
   <title>y</title>
 </head>
 <body>
+  <nav>
+    <h2 id="JS">Javascript Algorithms!</h2>
+    <ul id="list">
+      <button id="s" onclick="myFunction()">Click for List</button>
+      <li>Palindromes</li>
+      <li>Factorialize Function</li>
+      <li>Reverse A String</li>
+      <li>Longest Word In String</li>
+      <li>Title Case</li>
+      <li>Return Largest Number In Array</li>
+    </ul>
+  </nav>
+  <script>
+  alert("is it working?")
+    function myFunction() {
+      var el = document.querySelector('li');
+      if (el.style.display == '') {
+        el.style.display = 'none';
+        alert("hide");
+      }else{
+        el.style.display = 'grid';
+        alert("show");
+      }
+
+    }
+
+  </script>
+
   <div id="container">
   <div id="palindromes">
     <p>A Palindrome is a word or sentence that is spelled the same way forward as it is backwards.
