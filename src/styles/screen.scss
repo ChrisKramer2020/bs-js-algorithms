@@ -28,10 +28,59 @@ ul {
   list-style-type: none;
 }
 
-li {
-  
+#Another {
+  display:none;
+  list-style-type:none;
+  flex-direction: column;
+  font-size: 14px;
+  :hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+#clickme {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  position: relative;
+  left: 34em;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
 }
 
+#clickme:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+
+}
+
+#palindromes {
+  background-color: antiquewhite;
+}
+#factorialize {
+  background-color: bisque;
+}
+#reverse {
+  background-color:rgba(#537855, 0.45);
+}
+#longest-word {
+  background-color: rgba(#8067de, 0.59);
+}
+#title-case {
+  background-color: #8cd1e7;
+}
+#return-largest-num-array {
+  background-color: rgba(#323e5b, 0.78);
+}
 #palindromes,#factorialize,#reverse,#longest-word,#title-case,#return-largest-num-array {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -40,6 +89,10 @@ li {
   flex: 1;
   flex-direction: column;
   font-size: 12px;
+}
+
+p {
+  font-size: 22px;
 }
 
 #container {
@@ -72,6 +125,6 @@ p {
   text-decoration: underline;
   text-shadow: 2px 2px rgba(255, 0, 0, 0.31);
   position: relative;
-  top: 28px;
+  top: 18px;
   left: 14px;
   }
