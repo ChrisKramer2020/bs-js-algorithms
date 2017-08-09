@@ -27,5 +27,63 @@
 factorialize(5);
     </strong>
   </div>
+  <div id="reverse">
+    <p>How to reverse a string in javascript</p>
+    <strong>
+      Function reverse(str) {
+    return str.split("").reverse().join("");
+}
+
+reverse("Hello")
+    </strong>
+  </div>
+  <div id="longest-word">
+    <p>find longest word in string</p>
+    <strong>
+      function findLongestWord(str) {
+      var words = str.split(' ');
+      var maxLength = 0;
+      for (var i = 0; i < words.length; i++)
+    {
+        if (words[i].length > maxLength)
+             { maxLength = words[i].length; }
+ }
+return maxLength; }
+    </strong>
+  </div>
+  <div id="title-case">
+    <p>Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+      For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
+    </p>
+    <strong>
+      function titleCase(str) {
+       var convertToArray = str.toLowerCase().split(" ");
+      var result = convertToArray.map(function(val) {
+      return val.replace(val.charAt(0), val.charAt(0).toUpperCase()); });
+      return result.join(" "); }
+
+
+
+      // Sentence being passed to titleCase
+      titleCase("I'm a little tea pot"); <— this is (str)
+    </strong>
+  </div>
+  <div id="return-largest-num-array">
+    <p>You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.</p>
+    <strong>
+      function largestOfFour(arr) {
+      var results = [ ];
+      for (var n =0; n < arr.length; n++) {
+      var largestNumber = arr[n][0];
+      for ( var sb = 1; sb < arr[n].length; sb++) {
+        if (arr[n][sb] > largestNumber) {
+            largestNumber = arr[n][sb];
+        }
+            results[n] = largestNumber;
+        }
+    }
+}
+    </strong>
+  </div>
 </body>
 </html>
