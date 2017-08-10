@@ -12,6 +12,10 @@ body {
   font: $base-text-size / 1 $base-font-family;
 }
 
+h2 {
+  font-weight: 300;
+}
+
 nav {
   width: 100%;
   background-color: aquamarine;
@@ -89,10 +93,20 @@ ul {
   flex: 1;
   flex-direction: column;
   font-size: 12px;
+  font-weight: 100;
 }
 
 p {
   font-size: 22px;
+  font-weight: 100px;
+}
+
+.f,.h {
+  border-bottom: 5px solid #ace4c8;
+  height: 10vh;
+  border-left: 5px solid rgba(205, 92, 92, 0.52);
+  border-right: 5px solid rgba(205, 92, 92, 0.52);
+  text-decoration: underline;
 }
 
 #container {
@@ -106,14 +120,17 @@ strong {
   text-align: left;
   left: 100px;
   position: relative;
+  font-weight: 100;
   width: 35%;
   font-size: 16px;
+  align-self: center;
   background-color: rgba(51, 155, 205, 0.13);
 }
 
 p {
   width: 40%;
   position: relative;
+  font-weight: 100;
   left: 30vw;
 }
 

@@ -8,7 +8,7 @@
 <body>
   <nav>
     <h2 id="JS">Javascript Algorithms!</h2>
-    <button id="clickme">Menu</button>
+    <!-- <button id="clickme">Menu</button>
     <ul id="Another">
       <b>Algorithms</b>
       <li>Palindromes</li>
@@ -17,9 +17,11 @@
       <li>Longest Word In String</li>
       <li>Title Case</li>
       <li>Return Largest Number In Array</li>
-</ul>
+</ul> -->
   </nav>
   <script>
+  // Code for toggle button
+  alert(4!)
   document.getElementById("clickme").onclick=function() {
   var el = document.getElementById('Another');
     if (el.style.display == '') {
@@ -36,7 +38,7 @@
 
   <div id="container">
   <div id="palindromes">
-    <p>A Palindrome is a word or sentence that is spelled the same way forward as it is backwards.
+    <p class="p">A Palindrome is a word or sentence that is spelled the same way forward as it is backwards.
       <br /> Ex: Bob</p>
     <p>Note You'll need to remove all non-alphanumeric characters
       (punctuation, spaces and symbols) and turn everything lower
@@ -52,7 +54,10 @@
 </strong>
   </div>
   <div id="factorialize">
-    <p>a factorial function (symbol !) means to multiply a series of descending numbers</p>
+    <p class="fa">a factorial function (symbol !) means to multiply a series of descending numbers
+      <br />
+      Ex: 4! means 4 * 3 * 2 * 1 = 24
+    </p>
     <h2>Solution</h2>
     <strong>
       function factorialize(num) {
@@ -63,7 +68,7 @@ factorialize(5);
     </strong>
   </div>
   <div id="reverse">
-    <p>How to reverse a string in javascript</p>
+    <p class="h">How to reverse a string in javascript</p>
     <h2>Solution</h2>
     <strong>
       Function reverse(str) {
@@ -73,7 +78,7 @@ reverse("Hello")
     </strong>
   </div>
   <div id="longest-word">
-    <p>find longest word in string</p>
+    <p class="f">find longest word in string</p>
     <h2>Solution</h2>
     <strong>
       function findLongestWord(str) {
@@ -88,7 +93,7 @@ return maxLength; }
     </strong>
   </div>
   <div id="title-case">
-    <p>Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+    <p class="r">Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
       For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
     </p>
     <h2>Solution</h2>
@@ -107,7 +112,7 @@ return maxLength; }
   </div>
   <div id="return-largest-num-array">
     <h2>Solution</h2>
-    <p>You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.</p>
+    <p class="y">You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.</p>
     <strong>
       function largestOfFour(arr) {
       var results = [ ];
