@@ -23,7 +23,11 @@ nav {
   flex-direction: row;
   display: flex;
 }
-
+@media screen and (min-width: 260px) {
+    body {
+        background-color: lightgreen;
+    }
+}
 ul {
   float: right;
   position: relative;
@@ -83,8 +87,8 @@ ul {
   background-color: #8cd1e7;
 }
 #return-largest-num-array {
-  background-color: rgba(#323e5b, 0.78);
-}
+    background-color: rgba(127, 158, 232, 0.22);
+  }
 #palindromes,#factorialize,#reverse,#longest-word,#title-case,#return-largest-num-array {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -99,6 +103,9 @@ ul {
 p {
   font-size: 22px;
   font-weight: 100px;
+    @media screen and (min-width: 260px) {
+
+    }
 }
 
 .f,.h {
@@ -107,6 +114,10 @@ p {
   border-left: 5px solid rgba(205, 92, 92, 0.52);
   border-right: 5px solid rgba(205, 92, 92, 0.52);
   text-decoration: underline;
+    @media screen and (min-width: 260px) {
+      border: none;
+      margin-bottom: 20px;
+    }
 }
 
 #container {
@@ -118,13 +129,22 @@ p {
 
 strong {
   text-align: left;
-  left: 100px;
   position: relative;
   font-weight: 100;
   width: 35%;
   font-size: 16px;
   align-self: center;
-  background-color: rgba(51, 155, 205, 0.13);
+
+    @media screen and (min-width: 260px) {
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+        flex:1;
+        font-size: 19px;
+
+    }
 }
 
 p {
