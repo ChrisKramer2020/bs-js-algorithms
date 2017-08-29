@@ -1,7 +1,6 @@
 import './styles/screen.scss'
 
 const main = () => {
-  document.querySelector('h1').textContent += ''
 
 }
 
