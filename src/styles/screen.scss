@@ -151,9 +151,10 @@ p {
 strong {
   text-align: left;
   position: relative;
-  font-weight: 100;
+  font-weight: bold;
   width: 35%;
   font-size: 16px;
+  line-height: 2;
   align-self: center;
 
     @media screen and (min-width: 260px) {
