@@ -43,7 +43,7 @@
     <p class="p">
       <br /> Ex: Bob</p>
       <div class="solution">
-      <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
       <strong>
         Function palindrome(str) {
           <br />
@@ -59,7 +59,7 @@
       Ex: 4! means 4 * 3 * 2 * 1 = 24
     </p>
     <div class="solution">
-    <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
     <strong>
       function factorialize(num) {
   if (num === 0) { return 1; }
@@ -72,7 +72,7 @@ factorialize(5);
   <div id="reverse">
     <p class="h">How to reverse a string in javascript</p>
     <div class="solution">
-    <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
     <strong>
       Function reverse(str) {
     return str.split("").reverse().join("");
@@ -84,7 +84,7 @@ reverse("Hello")
   <div id="longest-word">
     <p class="f">find longest word in string</p>
     <div class="solution">
-    <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
     <strong>
       function findLongestWord(str) {
       var words = str.split(' ');
@@ -103,7 +103,7 @@ return maxLength; }
       For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
     </p>
     <div class="solution">
-    <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
     <strong>
       function titleCase(str) {
        var convertToArray = str.toLowerCase().split(" ");
@@ -121,7 +121,7 @@ return maxLength; }
   <div id="return-largest-num-array">
     <p class="y">You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.</p>
     <div class="solution">
-      <h2>Solution</h2>
+      <h2 id="solution">Solution</h2>
     <strong>
       function largestOfFour(arr) {
       var results = [ ];
@@ -140,10 +140,24 @@ return maxLength; }
 </div>
 </div>
 <script>
-  document.getElementByTagName("H2").addEventListener("hover", hide);
-  function hide() {
-
+  document.getElementById("solution").onclick = function() {
+    alert("clicked");
+    var grab = document.getElementById();
   }
+
+  // Code for toggle button
+//   document.getElementById("clickme").onclick=function() {
+//   var el = document.getElementById('Another');
+//     if (el.style.display == '') {
+//       alert("show")
+//     el.style.display = 'flex';
+//   } else {
+//     alert("hide")
+//     el.style.display = '';
+//   }
+//
+// };
+
 </script>
 </body>
 </html>

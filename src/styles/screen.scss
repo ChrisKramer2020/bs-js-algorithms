@@ -157,13 +157,13 @@ strong {
   background: #fff;
   background-blend-mode: darken;
   line-height: 2;
-  display: none;
+  display: flex;
   align-self: center;
 
     @media screen and (min-width: 260px) {
         align-items: center;
         align-content: center;
-        display: none;
+        display: flex;
         text-align: center;
         flex-direction: column;
         background-color: none;
